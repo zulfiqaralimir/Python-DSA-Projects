@@ -1,0 +1,36 @@
+# Project: Simple To-Do List Manager
+# Data Structure: List
+# Algorithms: Basic operations like add_task(), remove_task()
+
+class ToDoList:
+    def __init__(self):
+        # Initialize an empty list to store tasks
+        self.tasks = []
+
+    def add_task(self, task):
+        # Add a new task to the list
+        self.tasks.append(task)
+
+    def remove_task(self, task):
+        # Check if the task exists in the list and remove it if found
+        if task in self.tasks:
+            self.tasks.remove(task)
+        else:
+            print("Task not found!")
+
+    def display_tasks(self):
+        # Display all tasks in the list
+        if self.tasks:
+            print("Tasks:")
+            for idx, task in enumerate(self.tasks, start=1):
+                print(f"{idx}. {task}")
+        else:
+            print("No tasks!")
+
+# Example usage
+todo_list = ToDoList()
+todo_list.add_task("Study Data Structures")  # Add a task to the to-do list
+todo_list.add_task("Practice Algorithms")   # Add another task
+todo_list.display_tasks()                   # Display all tasks
+todo_list.remove_task("Study Data Structures")  # Remove a task
+todo_list.display_tasks()                   # Display updated tasks
