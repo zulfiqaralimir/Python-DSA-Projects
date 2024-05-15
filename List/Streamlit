@@ -4,8 +4,6 @@ Here's how you can adapt your code for Streamlit:
 
 First, ensure you have Streamlit installed. 
 You can install it via pip:
-```html
-<div style="background-color: #f2f2f2; padding: 10px;">
 
 ```bash
 pip install streamlit
