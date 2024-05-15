@@ -4,11 +4,12 @@ Here's how you can adapt your code for Streamlit:
 
 First, ensure you have Streamlit installed. 
 You can install it via pip:
-
+```html
+<div style="background-color: #f2f2f2; padding: 10px;">
 ```bash
 pip install streamlit
 ```
-
+</div>
 Now, create a Python file, let's call it `todo_list_app.py`, and put your `ToDoList` class and example usage inside a function. 
 Then, use Streamlit to create a web interface for your to-do list manager:
 
